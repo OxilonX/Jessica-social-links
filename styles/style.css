@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  background-color: var(--Grey-900);
+}
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  width: 320px;
+  height: auto;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 35px 0px 35px;
+  border-radius: 10px;
+  background-color: var(--Grey-800);
+}
+.image-headers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.jessica-avatar-picture {
+  width: 100%;
+  max-width: 75px;
+  border-radius: 50%;
+}
+h1 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: var(--White);
+}
+h3 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 10px;
+  text-transform: capitalize;
+  color: var(--Green);
+}
+p {
+  margin: 0;
+  font-size: 11px;
+  color: rgb(192, 192, 192);
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 75%;
+}
+button {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--Grey-700);
+  color: rgb(222, 222, 222);
+  text-transform: capitalize;
+  font-size: 11px;
+  font-weight: 550;
+  align-self: center;
+  justify-self: center;
+  user-select: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+button:hover {
+  color: var(--Grey-900);
+  background-color: var(--Green);
+}
+@media (min-width: 0px) and (max-width: 399px) {
+  .container {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .main-container {
+    border-radius: 0;
+  }
+  .jessica-avatar-picture {
+    max-width: 64px;
+  }
+  button {
+    height: 34px;
+    font-size: 11px;
+  }
+  h1 {
+    font-size: 14px;
+  }
+  h3 {
+    font-size: 8px;
+  }
+  p {
+    font-size: 10px;
+  }
+}
+@media (min-width: 400px) and (max-width: 480px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    width: 400px;
+    height: auto;
+  }
+  .jessica-avatar-picture {
+    max-width: 100px;
+  }
+  h1 {
+    font-size: 23px;
+  }
+  h3 {
+    font-size: 12px;
+  }
+  p {
+    font-size: 13px;
+  }
+  .main-container {
+    gap: 25px;
+  }
+  .image-headers {
+    gap: 12px;
+  }
+  button {
+    font-size: 14px;
+    height: 45px;
+  }
+}
