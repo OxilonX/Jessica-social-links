@@ -97,6 +97,9 @@ button:hover {
   .jessica-avatar-picture {
     max-width: 64px;
   }
+  .buttons {
+    padding-bottom: 50px;
+  }
   button {
     height: 34px;
     font-size: 11px;
